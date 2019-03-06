@@ -36,7 +36,7 @@ class TestTestingConfig(TestCase):
 
 class TestProductionConfig(TestCase):
     def create_app(self):
-        app.config.from_object('app.main.config.ProductionConfig')
+        app.config.from_object('app.main.config.ProductionConfig')  
         return app
 
     def test_app_is_production(self):
